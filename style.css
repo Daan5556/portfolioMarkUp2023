@@ -1,0 +1,146 @@
+body{
+    background: transparent linear-gradient(156deg, #1B7F79 0%, #747F7F 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logotext{
+    font: normal normal bold 70px/1px Campaign;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header{
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navList{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    height: 20vh;
+    height: clamp();
+}
+
+.navItems{
+    position: relative;
+    text-align: center;
+    font: normal normal bold clamp(2rem, 1rem + 5vw ,3rem)/40px basic-sans, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.sdWrapper{
+    position: relative;
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+
+#hello{
+    font: normal normal 1000 clamp(1rem, 0.855rem + 0.727vw, 1.4rem)/15px Calibri;
+
+}
+
+    
+
+#software{
+    font: normal normal 900 clamp(3.5rem, 1rem + 12vw, 12rem)/15px Alfabet;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    position: relative;
+}
+
+    #developer{
+    font: normal normal 900 clamp(3.5rem, 1rem + 12vw, 12rem)/1px Alfabet;
+    letter-spacing: 0px;
+    color: transparent;
+    opacity: 1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    position: relative;
+}
+
+    #daan{
+    width: 320px;
+    width: 500px;
+    width: clamp(320px, 40vw, 500px);
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+}
+
+.socialIcons{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.socialicon{
+    width: 40px;
+}
+
+
+@media (max-height: 800px) and (min-width: 450px) {
+    #daan{
+        width: 350px;
+    }
+}
+
+@media (min-aspect-ratio: 4/4) and (max-width: 1000px) and (max-height: 1100px) {
+    #daan{
+        right: 0;
+        width: 250px;
+    }
+    .navList{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    flex-direction: row;
+    gap: 24px;
+
+    }
+    .navItems{
+        font-size: medium;
+        margin-left: 25px;
+    }
+
+    .logotext{
+        text-align: end;
+    }
+
+    .header{
+        max-height: 180px;
+    }
+    .sdWrapper{
+        align-self: start;
+        margin-left: 25px;
+    }
+    .socialIcons{
+        flex-direction: row;
+        gap: 3px;
+    }
+    
+}
+
